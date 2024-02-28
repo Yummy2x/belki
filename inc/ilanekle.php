@@ -36,7 +36,7 @@
           <label class="adminleft">Resim: </label>
           <input type="file" name="dosya" id="dosya" />
         </div>
-        <div class="adminform_row_contact">
+        <div class="adminform_contact">
           <p>
             <label class="adminleft">Detay: </label>
             <label for="txdetay"></label>
@@ -64,7 +64,7 @@ if(isset($_POST["btEkle"]))
 		if($true=="upload/jpeg" || $true=="upload/png" || $true=="upload/gif") {}
 		else
 		{
-			"Bir resim dosyasi yükleyiniz";
+			"Bir resim dosyasi yÃ¼kleyiniz";
 		}
 		if($boyut<1024*1024)
 		{
@@ -77,22 +77,22 @@ if(isset($_POST["btEkle"]))
 				}
 				else
 				{
-					echo "Dosyaniz veritabanina yüklenemedi";
+					echo "Dosyaniz veritabanina yÃ¼klenemedi";
 				}
 			}
 			else
 			{
-				echo "Dosya yüklenemedi";
+				echo "Dosya yÃ¼klenemedi";
 			}
 		}
 		else
 		{
-			echo "Dosya boyutu 1 mb i geçemez";
+			echo "Dosya boyutu 1 mb i geÃ§emez";
 		}
 	}
 	else
 	{
-		echo "Bir dosya seçiniz";
+		echo "Bir dosya seÃ§iniz";
 	}
 
 }
